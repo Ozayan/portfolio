@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayan Teixeira Correa | Analista de Suporte</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        .hero { text-align: center; padding: 50px 20px 40px; background: #16213e; border-bottom: 3px solid #0f3460; }
+        .hero .foto { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #e94560; margin-bottom: 16px; object-fit: cover; background: #1a1a2e; }
+        .hero h1 { color: #e94560; font-size: 1.8rem; margin-bottom: 6px; }
+        .hero .tagline { color: #a0a0b0; font-size: 1rem; margin-bottom: 16px; }
+        .hero .resumo { color: #c0c0d0; font-size: 0.9rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+        .hero .links { margin-top: 20px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .hero .links a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; color: #fff; background: #0f3460; transition: background 0.2s; }
+        .hero .links a:hover { background: #e94560; }
+        .hero .links a.github { background: #333; }
+        .hero .links a.github:hover { background: #555; }
+        .hero .links a.linkedin { background: #0077b5; }
+        .hero .links a.linkedin:hover { background: #0091d4; }
+
+        /* Sections */
+        section { margin: 40px 0; }
+        section h2 { color: #e94560; font-size: 1.2rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #0f3460; }
+
+        /* Projetos */
+        .projetos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+        .card { background: #16213e; border-radius: 8px; padding: 20px; border: 1px solid #0f3460; transition: border-color 0.2s; }
+        .card:hover { border-color: #e94560; }
+        .card h3 { color: #e94560; font-size: 1rem; margin-bottom: 8px; }
+        .card p { font-size: 0.85rem; color: #a0a0b0; line-height: 1.5; margin-bottom: 12px; }
+        .card .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+        .card .tags span { padding: 3px 8px; border-radius: 4px; font-size: 0.7rem; background: #0f3460; color: #a0b0d0; }
+        .card a { display: inline-block; padding: 6px 14px; background: #e94560; color: #fff; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: bold; }
+        .card a:hover { background: #c73652; }
+
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+        .skill-group { background: #16213e; border-radius: 8px; padding: 16px; border: 1px solid #0f3460; }
+        .skill-group h3 { color: #e94560; font-size: 0.9rem; margin-bottom: 10px; }
+        .skill-group .items { display: flex; flex-wrap: wrap; gap: 6px; }
+        .skill-group .items span { padding: 4px 10px; border-radius: 4px; font-size: 0.78rem; background: #1a1a2e; border: 1px solid #0f3460; color: #c0c0d0; }
+
+        /* Formacao */
+        .formacao-item { background: #16213e; border-radius: 8px; padding: 16px; border: 1px solid #0f3460; margin-bottom: 12px; }
+        .formacao-item h3 { color: #e0e0e0; font-size: 0.95rem; }
+        .formacao-item .instituicao { color: #e94560; font-size: 0.85rem; margin: 4px 0; }
+        .formacao-item .periodo { color: #a0a0b0; font-size: 0.8rem; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; color: #606080; font-size: 0.8rem; border-top: 1px solid #0f3460; margin-top: 40px; }
+        footer a { color: #e94560; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.4rem; }
+            .hero .links { flex-direction: column; align-items: center; }
+            .projetos, .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img class="foto" src="foto.jpg" alt="Zayan Teixeira Correa" onerror="this.style.display='none'">
+        <h1>Zayan Teixeira Correa</h1>
+        <p class="tagline">Analista de Suporte | Concluinte de ADS</p>
+        <p class="resumo">
+            Profissional em formacao na area de tecnologia, com foco em suporte tecnico N1 e N2.
+            Experiencia pratica com Windows, Active Directory, Microsoft 365, redes e manutencao de hardware.
+            Busco oportunidade para aplicar meus conhecimentos e crescer na area de infraestrutura de TI.
+        </p>
+        <div class="links">
+            <a class="github" href="https://github.com/Ozayan" target="_blank">GitHub</a>
+            <a class="linkedin" href="https://linkedin.com/in/zayan" target="_blank">LinkedIn</a>
+            <a href="mailto:zayan@email.com">E-mail</a>
+            <a href="curriculo.pdf" download>Curriculo PDF</a>
+        </div>
+    </div>
+
+    <div class="container">
+<section>
+            <h2>Projetos</h2>
+            <div class="projetos">
+                <div class="card">
+                    <h3>Toolkit do Analista de Suporte</h3>
+                    <p>Ferramentas web para diagnostico: calculadora de sub-rede, gerador de scripts, validador de senha e decodificador de erros do Windows.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Redes</span>
+                    </div>
+                    <a href="https://ozayan.github.io/Toolkit-do-Analista-de-Suporte/" target="_blank">Abrir projeto</a>
+                </div>
+                <div class="card">
+                    <h3>Calculator Script</h3>
+                    <p>Calculadora com operacoes basicas e historico. Projeto inicial para praticar logica de programacao e manipulacao do DOM.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://ozayan.github.io/calculator-script/" target="_blank">Abrir projeto</a>
+                </div>
+                <div class="card">
+                    <h3>Artigos Academicos</h3>
+                    <p>Coletanea de artigos sobre seguranca da informacao no suporte N1, trajetoria no curso de ADS e conexao entre formacao e mercado.</p>
+                    <div class="tags">
+                        <span>Markdown</span><span>Seguranca</span><span>Carreira</span>
+                    </div>
+                    <a href="https://github.com/Ozayan/artigos" target="_blank">Ver repositorio</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades Tecnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Sistemas Operacionais</h3>
+                    <div class="items">
+                        <span>Windows 10/11</span><span>Instalacao e config</span><span>Troubleshooting</span><span>Prompt de comando</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Redes</h3>
+                    <div class="items">
+                        <span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>VPN</span><span>Sub-rede</span><span>Cabeamento RJ45</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Infraestrutura</h3>
+                    <div class="items">
+                        <span>Active Directory</span><span>File Server</span><span>Permissoes NTFS</span><span>GPO</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Microsoft 365</h3>
+                    <div class="items">
+                        <span>Exchange</span><span>Teams</span><span>SharePoint</span><span>OneDrive</span><span>Intune</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Hardware</h3>
+                    <div class="items">
+                        <span>Montagem de PCs</span><span>Upgrade</span><span>Manutencao preventiva</span><span>Diagnostico</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Programacao</h3>
+                    <div class="items">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Processos</h3>
+                    <div class="items">
+                        <span>Sistema de ticketing</span><span>Scrum</span><span>Kanban</span><span>Documentacao</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Seguranca</h3>
+                    <div class="items">
+                        <span>LGPD</span><span>Antivirus</span><span>Senhas</span><span>Controle de acesso</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formacao</h2>
+            <div class="formacao-item">
+                <h3>Analise e Desenvolvimento de Sistemas (Tecnologo)</h3>
+                <p class="instituicao">Anhanguera</p>
+                <p class="periodo">Conclusao em 2026 | 5 semestres</p>
+                <p style="font-size:0.85rem; color:#a0a0b0; margin-top:6px;">Grade com foco em algoritmos, banco de dados, desenvolvimento web, redes, cloud computing, seguranca da informacao, metodologias ageis e inteligencia artificial.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Zayan Teixeira Correa | Sao Paulo, SP | <a href="mailto:zayan@email.com">zayan@email.com</a><br>
+        Portfolio academico — Curso de Analise e Desenvolvimento de Sistemas (Anhanguera, 2026)
+    </footer>
+</body>
+</html>
